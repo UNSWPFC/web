@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import  Navbar from '../components/Navbar/index'
 import pfcLogo from '../assets/pfcLogo.png'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,10 +21,14 @@ export default function RootLayout({
         <link rel="icon" href={pfcLogo.src} />
         <title>UNSW pfc</title>
       </head>
-      {/* <body className={inter.className}>{children}</body> */}
-      <body className='globalBody'>
+      <body className='global-body'>
+        <Navbar />
         {children}
-        </body>
+      </body>
+      <head>
+        <link rel="icon" href={pfcLogo.src} />
+        <title>UNSW pfc</title>
+      </head>
     </html>
   )
 }

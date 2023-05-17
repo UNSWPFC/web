@@ -1,0 +1,33 @@
+.navbar {
+  font-family: Poppins;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: transparent;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar li a {
+  display: block;
+  padding: 10px;
+}
+
+.navbar-logo {
+  margin-right: 10px;
+}
