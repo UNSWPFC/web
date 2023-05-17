@@ -1,0 +1,22 @@
+body {
+  font-family: Poppins;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0em;
+  line-height: 1.4em;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0em;
+  line-height: 1.4em;
+  color: #000000;
+}
+
