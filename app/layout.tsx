@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import pfcLogo from './assets/pfcLogo.png'
+import pfcLogo from '../assets/pfcLogo.png'
 
 const inter = Inter({ subsets: ['latin'] })
 

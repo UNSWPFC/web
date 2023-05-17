@@ -1,4 +1,4 @@
-import weMoneyImg from '../assets/WeMoney.png';
+import weMoneyImg from '../../assets/WeMoney.png'
 import sponsorsStyle from './sponsors.module.css';
 
 export default function sponsors() {
