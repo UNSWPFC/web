@@ -2,7 +2,6 @@ import style from './home.module.css';
 
 export default function Home() {
   return (
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <div className={style.page}>
       <div className={style.banner}>
         <img src='/pfcTeam.jpeg' alt="pfc team" className={style.bannerImg} />
@@ -21,7 +20,5 @@ export default function Home() {
         UNSW Personal Finance Club (PFC) is a student run non-constituent society, with the primary goal of upskilling our members in the area of financial management. We aim to educate young people of all backgrounds to take responsibility for themselves and make sound financial decisions.
       </div>
     </div>
-      
-    // </main>
   )
 }
