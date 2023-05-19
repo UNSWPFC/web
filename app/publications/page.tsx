@@ -43,7 +43,7 @@ export default function publications() {
                             <div className={styles.articleContent}>
                             Been spending more than you should recently? Want to learn some tips on saving money with your purchases?
                             
-                            Amidst the holiday season, it's often difficult to not add things to your cart with the overwhelming sales everywhere we go. 
+                            Amidst the holiday season, it&apos;s often difficult to not add things to your cart with the overwhelming sales everywhere we go. 
                             In collaboration with UNSW Finance and Banking Society, we have prepared some helpful tips to protect 
                             our wallets and meet our financial goals!
                             </div>
