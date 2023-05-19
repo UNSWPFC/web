@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+.header {
+    background-image: url('../../assets/pubsImage.png'); 
+    height: 250px;
+    display: block;
+    background-color: #38383b;
+}
+
+.headerContent {
+  font-size: large;
+  background-color: #38383b;
+  color: white;
+  height: 10rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  display: flex;
+  padding-top: 5rem;
+
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin: auto;
+
+}
+
+.column {
+  margin-top: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border-width: 3px;
+  transition: border-color 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.column:hover {
+  border-color: #02104f;
+}
+
+.articleHeading {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  font-weight: 500;
+  color: black;
+  line-height: 1.6;
+}
+
+.articleContent {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #808080;
+  line-height:17px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.articleLink {
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: small;
+  font-weight: 500;
+  color: #02104f;
+  text-decoration: underline;
+}
+
+.blog-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.holidayBudgetingImg {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
