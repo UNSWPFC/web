@@ -11,8 +11,8 @@ export default function Navbar () {
         </div>
         <ul>
           <li><Link href="#">Home</Link></li>
-          <li><Link href="/ourmission">Our Mission</Link></li>
-          <li><Link href="/ourteam">Our Team</Link></li>
+          <li><Link href="/our-mission">Our Mission</Link></li>
+          <li><Link href="/our-team">Our Team</Link></li>
           <li><Link href="/events">Events</Link></li>
           <li><Link href="/publications">Publications</Link></li>
           <li><Link href="/sponsors">Sponsors/Partners</Link></li>
