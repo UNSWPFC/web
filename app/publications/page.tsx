@@ -5,11 +5,11 @@ import headerPubs from '../../assets/pubsImage.png'
 export default function publications() {
     return (
         <>
-            <header className={styles.header}>
-                <div className={styles.headerContent}>
-                    <h1>Publications</h1>
+            <div className='section-border'>
+                <div className='content-wrapper'>
+                <h1 id='page-title'>Publications</h1>
                 </div>
-            </header> 
+            </div>
 
             <div className={styles.row}>
                 <div className={styles.column}>    
@@ -30,7 +30,7 @@ export default function publications() {
                             to bring new insights into your own personal finances. Also, keep an eye out as subcommittee recruitment 
                             applications will be out soon!
                             </div>
-                            <div className={styles.articleLink}>Read more</div>
+                            <a href="../../assets/pubsWk2.pdf" download className={styles.articleLink}>Read more</a>
                     </div>
                 </div>      
             </div>
@@ -47,7 +47,7 @@ export default function publications() {
                             In collaboration with UNSW Finance and Banking Society, we have prepared some helpful tips to protect 
                             our wallets and meet our financial goals!
                             </div>
-                            <div className={styles.articleLink}>Read more</div>
+                            <a href="../../assets/pubsBudgeting.pdf" download className={styles.articleLink}>Read more</a>
                     </div>
                 </div>
             </div>
