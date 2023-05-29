@@ -1,7 +1,7 @@
 .navbar {
-  font-family: Poppins;
-  font-size: 1.5rem;
-  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
   height: 10%;  
   background-color: transparent;
 }
@@ -27,6 +27,13 @@
 .navbar li a {
   display: block;
   padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 .navbar-logo {
