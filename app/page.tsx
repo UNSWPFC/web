@@ -2,5 +2,5 @@
 import React from "react";
 
 export default function Home() {
-  return <p>Follow these steps to get involved!</p>;
+  return <p></p>;
 }

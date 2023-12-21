@@ -6,50 +6,95 @@ import {
   NavbarItem,
   Link,
   Button,
-  Image,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
 } from "@nextui-org/react";
+import Image from "next/image";
 
-export default function Home() {
+export default function App() {
+  const menuItems = [
+    "About Us",
+    "Events",
+    "Publications",
+    "Sponsors",
+    "Join Us",
+  ];
+
   return (
-    <Navbar isBordered className="shadow-md">
-      <NavbarBrand>
-        <Image width={60} height={60} src="/pfcLogo.png"></Image>
-        <p className="font-brand font-bold text-xl text-yellow-600">
-          UNSW Personal Finance Society
-        </p>
-      </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="end">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            About Us
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Events
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Publications
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Sponsors
-          </Link>
+    <Navbar isBordered>
+      <NavbarContent className="lg:hidden" justify="start">
+        <NavbarMenuToggle />
+      </NavbarContent>
+
+      <NavbarContent className="lg:hidden" justify="center">
+        <NavbarBrand className="gap-3">
+          <Image width={40} height={40} src="/logo.svg" alt="Logo"></Image>
+          <p className="font-brand font-bold text-xl text-orange-400">
+            UNSW Personal Finance Society
+          </p>
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent className="hidden lg:flex gap-4" justify="start">
+        <NavbarBrand className="gap-3">
+          <Image width={40} height={40} src="/logo.svg" alt="Logo"></Image>
+          <p className="font-brand font-bold text-xl text-orange-400">
+            UNSW Personal Finance Society
+          </p>
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent justify="end">
+        <div className="hidden lg:flex gap-4">
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              About Us
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              Events
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              Publications
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              Sponsors
+            </Link>
+          </NavbarItem>
+        </div>
+        <NavbarItem className="hidden sm:flex">
+          <Button
+            as={Link}
+            className="bg-blue-600 text-white shadow-lg hidden lg:flex"
+            href="#"
+            variant="flat"
+          >
+            Join Us
+          </Button>
         </NavbarItem>
       </NavbarContent>
-      <NavbarItem>
-        <Button
-          as={Link}
-          className="bg-gradient-to-tr from-gold-400 to-orange-400 text-white shadow-lg"
-          href="#"
-          variant="flat"
-        >
-          Join Us
-        </Button>
-      </NavbarItem>
+
+      <NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              className={`w-full ${
+                index === menuItems.length - 1 ? "text-blue-600" : "text-black"
+              }`}
+              href="#"
+              size="lg"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   );
 }

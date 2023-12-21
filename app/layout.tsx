@@ -1,15 +1,19 @@
 import "./globals.css";
-import { Quicksand, Lexend_Deca, Orbit } from "next/font/google";
+import { Quicksand, Lexend_Deca, Comfortaa } from "next/font/google";
 import Navbar from "../components/navbar";
 import Providers from "./providers";
 
-const brandFont = Orbit({
+const brandFont = Comfortaa({
   subsets: ["latin"],
   variable: "--font-brand",
   weight: "400",
 });
 const headerFont = Quicksand({ subsets: ["latin"], variable: "--font-header" });
-const bodyFont = Lexend_Deca({ subsets: ["latin"], variable: "--font-body" });
+const bodyFont = Lexend_Deca({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: "300",
+});
 
 export const metadata = {
   title: "UNSW Personal Finance Society",
