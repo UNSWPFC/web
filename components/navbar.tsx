@@ -27,10 +27,20 @@ export default function App() {
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarContent className="lg:hidden" justify="center">
-        <NavbarBrand className="gap-3">
+      <NavbarContent className="xs:hidden" justify="center">
+        <NavbarBrand className="gap-3 text-wrap">
           <Image width={40} height={40} src="/logo.svg" alt="Logo"></Image>
-          <p className="font-brand font-bold text-xl text-orange-400">
+          <p className="font-brand font-bold text-orange-400 text-sm xs:text-xl">
+            UNSW Personal <br />
+            Finance Society
+          </p>
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent className="hidden xs:flex lg:hidden" justify="center">
+        <NavbarBrand className="gap-3 text-wrap whitespace-pre-wrap">
+          <Image width={40} height={40} src="/logo.svg" alt="Logo"></Image>
+          <p className="font-brand font-bold text-orange-400 text-sm xs:text-xl">
             UNSW Personal Finance Society
           </p>
         </NavbarBrand>
@@ -39,7 +49,7 @@ export default function App() {
       <NavbarContent className="hidden lg:flex gap-4" justify="start">
         <NavbarBrand className="gap-3">
           <Image width={40} height={40} src="/logo.svg" alt="Logo"></Image>
-          <p className="font-brand font-bold text-xl text-orange-400">
+          <p className="font-brand font-bold text-orange-400 text-xl">
             UNSW Personal Finance Society
           </p>
         </NavbarBrand>

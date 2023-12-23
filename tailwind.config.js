@@ -25,6 +25,9 @@ module.exports = {
         header: "var(--font-header)",
         body: "var(--font-body)",
       },
+      screens: {
+        xs: "321px",
+      },
     },
   },
   darkMode: "class",
