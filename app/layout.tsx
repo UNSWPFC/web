@@ -1,7 +1,8 @@
 import "./globals.css";
 import { Quicksand, Lexend_Deca, Comfortaa } from "next/font/google";
-import Navbar from "../components/navbar";
 import Providers from "./providers";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const brandFont = Comfortaa({
   subsets: ["latin"],
@@ -19,11 +20,7 @@ export const metadata = {
   title: "UNSW Personal Finance Society",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body
@@ -34,6 +31,9 @@ export default function RootLayout({
             <Navbar />
           </header>
           <main>{children}</main>
+          <footer>
+            <Footer />
+          </footer>
         </Providers>
       </body>
     </html>
