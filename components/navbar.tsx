@@ -22,7 +22,7 @@ export default function navbar() {
   ];
 
   return (
-    <Navbar isBordered>
+    <Navbar>
       <NavbarContent className="lg:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>
@@ -49,7 +49,7 @@ export default function navbar() {
             width={40}
             height={40}
             src="/logos/pfcLogo.svg"
-            alt="Logo"
+            alt="pfcLogo"
           ></Image>
           <p className="font-brand font-bold text-orange-400 text-sm xs:text-xl">
             UNSW Personal Finance Club

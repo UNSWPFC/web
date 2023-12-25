@@ -17,7 +17,7 @@ const bodyFont = Lexend_Deca({
 });
 
 export const metadata = {
-  title: "UNSW Personal Finance Society",
+  title: "UNSW Personal Finance Club",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
