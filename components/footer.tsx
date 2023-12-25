@@ -16,7 +16,7 @@ export default function footer() {
             UNSW Personal Finance Club
           </p>
         </div>
-        <div className="flex justify-center items-center gap-24 py-3">
+        <div className="flex justify-center items-center gap-6 lg:gap-24 py-3">
           <Link href="#">
             <Image
               width={30}
@@ -55,7 +55,7 @@ export default function footer() {
         </div>
 
         <div className="flex justify-center items-center py-3">
-          <p className="text-white">
+          <p className="text-white text-center">
             This PFC publication is proudly supported by Arc.
           </p>
         </div>
