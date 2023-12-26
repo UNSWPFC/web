@@ -28,7 +28,7 @@ export default function navbar() {
       </NavbarContent>
 
       <NavbarContent className="xs:hidden" justify="center">
-        <NavbarBrand className="gap-3">
+        <NavbarBrand className="gap-3 cursor-pointer" as={Link} href="/">
           <Image
             width={40}
             height={40}
@@ -44,7 +44,18 @@ export default function navbar() {
       </NavbarContent>
 
       <NavbarContent className="hidden xs:flex lg:hidden" justify="center">
-        <NavbarBrand className="gap-3 whitespace-pre-wrap">
+        <NavbarBrand
+          className="gap-3 whitespace-pre-wrap cursor-pointer"
+          as={Link}
+          href="/"
+        >
+          {/* <Button
+            className="bg-slate-100 whitespace-pre-wrap"
+            disableAnimation
+            href="/"
+            as={Link}
+            size="lg"
+          > */}
           <Image
             width={40}
             height={40}
@@ -54,11 +65,12 @@ export default function navbar() {
           <p className="font-brand font-bold text-orange-400 text-sm xs:text-xl">
             UNSW Personal Finance Club
           </p>
+          {/* </Button> */}
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden lg:flex gap-4" justify="start">
-        <NavbarBrand className="gap-3">
+        <NavbarBrand className="gap-3 cursor-pointer" as={Link} href="/">
           <Image
             width={40}
             height={40}

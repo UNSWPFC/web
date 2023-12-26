@@ -55,7 +55,7 @@ export default function footer() {
             </Link>
           </div>
 
-          <div className="flex justify-center items-center py-3">
+          <div className="flex justify-center items-center py-3 text-sm">
             <p className="text-white text-center">
               This PFC publication is proudly supported by Arc.
             </p>

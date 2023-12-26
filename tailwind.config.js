@@ -2,6 +2,7 @@ const { nextui } = require("@nextui-org/react");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: "jit",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -27,6 +28,11 @@ module.exports = {
       },
       screens: {
         xs: "321px",
+        hero: "784px",
+        herotext: "451px",
+      },
+      height: {
+        128: "100%",
       },
     },
   },
