@@ -1,13 +1,14 @@
 import style from "./home.module.css";
-import { Button } from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
 import { ChevronDown } from "lucide-react";
-import CalmAnimation from "../components/calmAnimation";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-slate-50 pt-8 xs:pt-10 herotext:pt-12 hero:pt-18">
-      <div className="hero:flex mx-auto max-w-screen-lg px-6 items-center justify-center hero:justify-start min-h-fit hero:h-96">
+    <div
+      className={`${style.bg} bg-slate-50 pt-10 xs:pt-12 herotext:pt-14 hero:pt-18 spacer hero:wavesLargeSpacer`}
+    >
+      <div className="hero:flex mx-auto max-w-screen-lg px-6 items-center justify-center hero:justify-start hero:h-96">
         <div className="hero:flex">
           <div>
             <p className="font-body uppercase py-6 text-center hero:text-left text-xs herotext:text-sm">
@@ -21,21 +22,24 @@ export default function Home() {
           </div>
         </div>
         <div
-          className={`block hero:flex hero:justify-end hero:grow hero:items-center px-10 xs:px-20 hero:px-0`}
+          className={`block hero:flex hero:justify-end hero:grow hero:items-center py-12 hero:py-0`}
         >
-          <div
-            className={`flex items-center justify-center hero:justify-end object-cover aspect-square`}
-          >
-            <CalmAnimation />
+          <div className={`flex items-center justify-center hero:justify-end`}>
+            <Image
+              width={400}
+              height={400}
+              src="/illustrations/blooming.svg"
+              alt="Logo"
+            ></Image>
+            {/* other potential imgs: blooming, invest, savings, */}
           </div>
         </div>
       </div>
       <div className="hidden hero:flex justify-center">
-        <Button isIconOnly className="bg-slate-50">
+        <Link className="cursor-pointer" color="foreground">
           <ChevronDown />
-        </Button>
+        </Link>
       </div>
-      <div className={`${style.spacer} ${style.bg}`}></div>
     </div>
   );
 }

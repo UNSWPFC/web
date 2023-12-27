@@ -27,13 +27,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         className={`${brandFont.variable} ${headerFont.variable} ${bodyFont.variable} antialiased global-body`}
       >
         <Providers>
-          <header>
-            <Navbar />
-          </header>
+          <Navbar />
           <main>{children}</main>
-          <footer>
-            <Footer />
-          </footer>
+          <Footer />
         </Providers>
       </body>
     </html>

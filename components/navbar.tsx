@@ -49,13 +49,6 @@ export default function navbar() {
           as={Link}
           href="/"
         >
-          {/* <Button
-            className="bg-slate-100 whitespace-pre-wrap"
-            disableAnimation
-            href="/"
-            as={Link}
-            size="lg"
-          > */}
           <Image
             width={40}
             height={40}
@@ -65,7 +58,6 @@ export default function navbar() {
           <p className="font-brand font-bold text-orange-400 text-sm xs:text-xl">
             UNSW Personal Finance Club
           </p>
-          {/* </Button> */}
         </NavbarBrand>
       </NavbarContent>
 
@@ -86,22 +78,22 @@ export default function navbar() {
       <NavbarContent justify="end">
         <div className="hidden lg:flex gap-4">
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="about">
               About Us
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="events">
               Events
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="publications">
               Publications
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="sponsors">
               Sponsors
             </Link>
           </NavbarItem>
