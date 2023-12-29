@@ -22,7 +22,7 @@ export default function navbar() {
   ];
 
   return (
-    <Navbar>
+    <Navbar isBlurred={false}>
       <NavbarContent className="lg:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>

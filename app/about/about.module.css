@@ -1,3 +1,11 @@
-.bg {
+.aboutUsBG {
   background-image: url(/illustrations/aboutUsWaves.svg);
+}
+
+.ourMissionBG {
+  background-image: url(/illustrations/missionWaves.svg);
+}
+
+.executivesBG {
+  background-image: url(/illustrations/executivesGradient.svg);
 }

@@ -31,8 +31,8 @@ module.exports = {
         hero: "784px",
         herotext: "451px",
       },
-      height: {
-        128: "100%",
+      minWidth: {
+        "screen-lg": "1024px",
       },
     },
   },

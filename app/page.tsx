@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="hidden hero:flex justify-center">
+      <div className="hidden hero:flex justify-center pt-16">
         <Link className="cursor-pointer" color="foreground">
           <ChevronDown />
         </Link>
