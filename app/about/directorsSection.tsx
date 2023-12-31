@@ -5,7 +5,7 @@ import { DirectorsProfilesData } from "../constants/profileData";
 export default function DirectorsSection() {
   return (
     <div
-      className={`bg-slate-50 pt-8 xs:py-10 herotext:py-12 hero:py-18 spacer ${style.directorsBG} max-h-32 profilesSection`}
+      className={`bg bgRatio ${style.directorsBG} bg-slate-50 pt-8 xs:py-10 herotext:py-12 hero:py-18 max-h-32 profilesSection`}
     >
       <div className="flex mx-auto max-w-screen-lg justify-center">
         <div className="flex max-w-lg justify-center">

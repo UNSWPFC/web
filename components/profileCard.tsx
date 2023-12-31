@@ -12,22 +12,23 @@ export default function profileCard(props: {
 
   return (
     <Card shadow="lg" className="min-w-fit">
-      <CardBody className="">
+      <CardBody className="flex-none">
         <Image
           alt="headshot"
-          width={200}
-          height={200}
+          width={250}
+          height={250}
+          quality={100}
           src={"/headshots/" + imgSrc + ".jpg"}
           className="object-cover rounded-xl z-0 h-auto w-auto"
         />
       </CardBody>
       <CardFooter className="py-2 px-4 justify-between items-center">
-        <div>
+        <div className="w-48">
           <h4 className="font-bold text-large">{name}</h4>
           <p className="font-body">{role}</p>
           <small className="text-default-500">{degree}</small>
         </div>
-        <Link target="_blank" href={linkedIn}>
+        <Link isExternal href={linkedIn}>
           <Image
             width={40}
             height={40}

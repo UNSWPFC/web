@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function AboutUsSection() {
   return (
     <div
-      className={`bg-slate-50 pt-8 xs:py-10 herotext:py-12 hero:py-18 spacer ${style.aboutUsBG}`}
+      className={`bg bgRatio ${style.aboutUsBG} bg-slate-50 pt-8 xs:py-10 herotext:py-12 hero:py-18`}
     >
       <div className="hero:flex mx-auto max-w-screen-lg px-6 items-center hero:h-96">
         <div className="flex justify-center hero:justify-start">

@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div
-      className={`${style.bg} bg-slate-50 pt-10 xs:pt-12 herotext:pt-14 hero:pt-18 spacer hero:wavesLargeSpacer`}
+      className={`${style.bg} bg-slate-50 pt-10 xs:pt-12 herotext:pt-14 hero:pt-18 bg bgRatio hero:wavesLargeSpacer`}
     >
       <div className="hero:flex mx-auto max-w-screen-lg px-6 items-center justify-center hero:justify-start hero:h-96">
         <div className="hero:flex">

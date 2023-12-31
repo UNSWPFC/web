@@ -14,11 +14,11 @@ import Image from "next/image";
 
 export default function navbar() {
   const menuItems = [
-    "About Us",
-    "Events",
-    "Publications",
-    "Sponsors",
-    "Join Us",
+    { name: "About Us", nav: "about" },
+    { name: "Events", nav: "events" },
+    { name: "Publications", nav: "publications" },
+    { name: "Sponsors", nav: "sponsors" },
+    { name: "Join Us", nav: "join" },
   ];
 
   return (
@@ -110,17 +110,17 @@ export default function navbar() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="flex items-center">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={`${item.name}-${index}`}>
             <Link
-              className={`w-full ${
+              className={`w-full text-2xl leading-loose ${
                 index === menuItems.length - 1 ? "text-blue-600" : "text-black"
               }`}
-              href="#"
+              href={item.nav}
               size="lg"
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}

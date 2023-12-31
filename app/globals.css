@@ -7,8 +7,11 @@
   font-family: var(--font-body);
 }
 
-.spacer {
+.bgRatio {
   aspect-ratio: 900/300;
+}
+
+.bg {
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;

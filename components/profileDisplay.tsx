@@ -37,8 +37,7 @@ export default function ProfileDisplay(props: {
                   key={item.category}
                   initial={{ opacity: 0, scale: 1 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2 }}
+                  transition={{ duration: 0.4 }}
                 >
                   {item.data.map((person) => (
                     <ProfileCard

@@ -5,7 +5,7 @@ import { Goal } from "lucide-react";
 export default function OurMissionSection() {
   return (
     <div
-      className={` bg-slate-50 pt-8 xs:py-10 herotext:py-12 hero:py-18 spacer ${style.ourMissionBG} max-h-32`}
+      className={`bg bgRatio ${style.ourMissionBG} bg-slate-50 pt-8 xs:py-10 herotext:py-12 hero:py-18 max-h-32`}
     >
       <div className="hero:flex mx-auto max-w-screen-lg px-6 items-center justify-center hero:justify-start hero:h-96">
         <div className="flex justify-center hero:justify-start pb-8 hero:pb-0">
