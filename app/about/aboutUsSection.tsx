@@ -24,7 +24,7 @@ export default function AboutUsSection() {
         </div>
         <div className="block hero:flex hero:justify-end hero:grow hero:items-center px-5 xs:px-10 hero:px-0">
           <div className="flex items-center justify-center hero:justify-end hero:pl-8">
-            <Card radius="lg" className="border-none" shadow="lg" isHoverable>
+            <Card radius="lg" className="border-none" shadow="lg">
               <Image
                 alt="Woman listing to music"
                 className="object-cover"

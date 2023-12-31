@@ -1,5 +1,4 @@
-import { Card, CardBody, CardFooter, Link } from "@nextui-org/react";
-import Image from "next/image";
+import { Card, CardBody, CardFooter, Link, Image } from "@nextui-org/react";
 
 export default function profileCard(props: {
   name: string;
@@ -16,8 +15,7 @@ export default function profileCard(props: {
         <Image
           alt="headshot"
           width={250}
-          height={250}
-          quality={100}
+          height="100%"
           src={"/headshots/" + imgSrc + ".jpg"}
           className="object-cover rounded-xl z-0 h-auto w-auto"
         />
