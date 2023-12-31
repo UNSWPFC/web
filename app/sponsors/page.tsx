@@ -11,7 +11,7 @@ export default function Sponsors() {
         </p>
       </div>
       <div
-        className={`${style.sponsorsBG} bg flex justify-center items-center py-48 px-12`}
+        className={`${style.sponsorsBG} bg flex justify-center items-center py-36 px-12`}
       >
         <SponsorCard sponsor={WeMoneyInfo} />
       </div>
