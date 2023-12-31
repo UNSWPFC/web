@@ -23,6 +23,10 @@
   .wavesLargeSpacer {
     min-height: 600px;
   }
+
+  .profilesSection {
+    min-height: 750px;
+  }
 }
 /*
 :root {

@@ -15,10 +15,10 @@ export default function profileCard(props: {
       <CardBody className="">
         <Image
           alt="headshot"
-          className="object-cover rounded-xl z-0"
-          width={270}
-          height={270}
-          src={"/headshotsCropped/" + imgSrc + ".jpg"}
+          width={200}
+          height={200}
+          src={"/headshots/" + imgSrc + ".jpg"}
+          className="object-cover rounded-xl z-0 h-auto w-auto"
         />
       </CardBody>
       <CardFooter className="py-2 px-4 justify-between items-center">

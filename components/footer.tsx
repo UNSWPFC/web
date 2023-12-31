@@ -24,6 +24,7 @@ export default function footer() {
                 height={30}
                 src="/logos/arc.png"
                 alt="arcLogo"
+                className="h-auto w-auto"
               ></Image>
             </Link>
             <Link target="_blank" href="https://www.facebook.com/unswpfc">

@@ -1,6 +1,7 @@
 import AboutUs from "./aboutUsSection";
 import OurMission from "./ourMissionSection";
 import ExecutivesSection from "./executivesSection";
+import DirectorsSection from "./directorsSection";
 
 export default function About() {
   return (
@@ -8,6 +9,7 @@ export default function About() {
       <AboutUs />
       <OurMission />
       <ExecutivesSection />
+      <DirectorsSection />
     </>
   );
 }

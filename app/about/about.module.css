@@ -7,5 +7,9 @@
 }
 
 .executivesBG {
-  background-image: url(/illustrations/executivesGradient.svg);
+  background-image: url(/illustrations/executivesBG.svg);
+}
+
+.directorsBG {
+  background-image: url(/illustrations/directorsBG.svg);
 }
