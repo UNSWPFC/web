@@ -2,7 +2,7 @@
 
 import ProfileCard from "@/components/profileCard";
 import { Tabs, Tab } from "@nextui-org/react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function ProfileDisplay(props: {
   categories: {
@@ -31,25 +31,23 @@ export default function ProfileDisplay(props: {
         >
           {(item) => (
             <Tab key={item.category} title={item.category}>
-              <AnimatePresence>
-                <motion.div
-                  className="flex gap-12 min-w-max px-20"
-                  key={item.category}
-                  initial={{ opacity: 0, scale: 1 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4 }}
-                >
-                  {item.data.map((person) => (
-                    <ProfileCard
-                      key={person.name}
-                      name={person.name}
-                      role={person.role}
-                      degree={person.degree}
-                      linkedIn={person.linkedIn}
-                    />
-                  ))}
-                </motion.div>
-              </AnimatePresence>
+              <motion.div
+                className="flex gap-12 justify-center min-w-fit px-20"
+                key={item.category}
+                initial={{ opacity: 0, scale: 1 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4 }}
+              >
+                {item.data.map((person) => (
+                  <ProfileCard
+                    key={person.name}
+                    name={person.name}
+                    role={person.role}
+                    degree={person.degree}
+                    linkedIn={person.linkedIn}
+                  />
+                ))}
+              </motion.div>
             </Tab>
           )}
         </Tabs>

@@ -26,10 +26,11 @@ export default function Home() {
         >
           <div className={`flex items-center justify-center hero:justify-end`}>
             <Image
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               src="/illustrations/blooming.svg"
               alt="Logo"
+              className="h-96 w-auto"
             ></Image>
             {/* other potential imgs: blooming, invest, savings, */}
           </div>
