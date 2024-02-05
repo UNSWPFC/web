@@ -12,7 +12,7 @@ export default function PastEventsSection() {
         <div className="flex justify-center">
           <div className="max-w-screen-lg px-6 flex flex-wrap justify-center lg:grid lg:grid-cols-2 gap-8">
             {PastEvents.map((e) => (
-              <EventCard event={e} />
+              <EventCard event={e} key={e.title} />
             ))}
           </div>
         </div>

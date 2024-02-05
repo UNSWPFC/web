@@ -23,7 +23,7 @@ export default function UpcomingEventsSection() {
         <div className="flex justify-center">
           <div className="max-w-screen-lg px-6 flex flex-wrap justify-center gap-8">
             {UpcomingEvents.map((e) => (
-              <EventCard event={e} />
+              <EventCard event={e} key={e.title} />
             ))}
           </div>
         </div>
