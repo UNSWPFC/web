@@ -13,7 +13,7 @@ import {
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function App(props: {
+export default function SponsorCard(props: {
   sponsor: {
     name: string;
     description: string;
@@ -26,7 +26,6 @@ export default function App(props: {
     <motion.div
       initial={{ y: 100, opacity: 0, scale: 1 }}
       animate={{ y: 0, opacity: 1, scale: 1 }}
-      transition={{ duration: 0.4 }}
     >
       <Card className="max-w-[500px]" shadow="lg">
         <CardHeader className="flex">

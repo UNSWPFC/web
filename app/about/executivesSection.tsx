@@ -1,6 +1,6 @@
 import style from "./about.module.css";
 import ProfileDisplay from "@/components/profileDisplay";
-import { ExecutivesProfilesData } from "../constants/profileData";
+import { ExecutivesProfilesData } from "../constants/profileInfo";
 
 export default function ExecutivesSection() {
   return (

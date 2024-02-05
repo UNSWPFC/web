@@ -5,3 +5,7 @@
 .eventsSectionBG {
   background-image: url(/illustrations/sponsorsBG.svg);
 }
+
+.upcomingEventsSectionBG {
+  background-image: url(/illustrations/directorsBG.svg);
+}

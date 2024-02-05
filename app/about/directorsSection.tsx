@@ -1,6 +1,6 @@
 import style from "./about.module.css";
 import ProfileDisplay from "../../components/profileDisplay";
-import { DirectorsProfilesData } from "../constants/profileData";
+import { DirectorsProfilesData } from "../constants/profileInfo";
 
 export default function DirectorsSection() {
   return (
