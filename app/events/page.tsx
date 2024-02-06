@@ -1,4 +1,4 @@
-import UpcomingEventsSection from "./upcomingEventsSection";
+import UpcomingEventsSection from "@/components/upcomingEventsSection";
 import PastEventsSection from "./pastEventsSections";
 
 export default function Publications() {

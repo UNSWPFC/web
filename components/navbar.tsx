@@ -101,8 +101,9 @@ export default function navbar() {
         <NavbarItem className="hidden sm:flex">
           <Button
             as={Link}
+            href="https://forms.gle/mFkmdRqTojUUY1MU9"
+            isExternal
             className="bg-blue-600 text-white shadow-lg hidden lg:flex"
-            href="#"
             variant="flat"
           >
             Join Us
