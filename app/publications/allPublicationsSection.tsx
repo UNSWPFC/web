@@ -13,7 +13,7 @@ export default function AllPublicationsSection() {
           <div className="max-w-screen-lg px-6 flex flex-wrap justify-center">
             {publicationInfo.map((p) => (
               <div className="py-8">
-                <PublicationCard publication={p} />
+                <PublicationCard publication={p} key={p.title} />
               </div>
             ))}
           </div>
