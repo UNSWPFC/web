@@ -21,7 +21,10 @@ export default function footer() {
             <p className="text-white text-center">unswpfc@gmail.com</p>
           </div>
           <div className="flex justify-center items-center gap-6 lg:gap-24 py-3">
-            <Link href="#">
+            <Link
+              href="https://member.arc.unsw.edu.au/s/clubdetail?clubid=0016F0000371VzAQAU"
+              isExternal
+            >
               <Image
                 width={30}
                 height={30}
@@ -30,7 +33,7 @@ export default function footer() {
                 className="h-auto w-auto"
               ></Image>
             </Link>
-            <Link target="_blank" href="https://www.facebook.com/unswpfc">
+            <Link href="https://www.facebook.com/unswpfc" isExternal>
               <Image
                 width={40}
                 height={40}
@@ -38,7 +41,7 @@ export default function footer() {
                 alt="fbLogo"
               ></Image>
             </Link>
-            <Link target="_blank" href="https://www.instagram.com/unswpfc/">
+            <Link href="https://www.instagram.com/unswpfc/" isExternal>
               <Image
                 width={40}
                 height={40}
@@ -46,10 +49,7 @@ export default function footer() {
                 alt="igLogo"
               ></Image>
             </Link>
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/company/unswpfc/"
-            >
+            <Link href="https://www.linkedin.com/company/unswpfc/" isExternal>
               <Image
                 width={40}
                 height={40}

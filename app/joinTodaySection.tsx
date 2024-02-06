@@ -3,13 +3,13 @@ import { Link, Button } from "@nextui-org/react";
 export default function JoinTodaySection() {
   return (
     <>
-      <div className="bg-slate-50 bg py-16 lg:py-24">
+      <div className="bg-white bg py-16 lg:py-24">
         <div className="pb-8 xs:pb-12">
           <p className="font-brand font-bold text-zinc-800 leading-normal text-center text-2xl xs:text-3xl herotext:text-4xl pb-12">
-            Join PFC today!
+            Join PFC today
           </p>
           <p className="font-body text-center">
-            Follow these easy steps to get involved!
+            Meet like-minded people and learn more about personal finance!
           </p>
         </div>
 

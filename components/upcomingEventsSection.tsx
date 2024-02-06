@@ -1,9 +1,11 @@
 import { UpcomingEvents } from "../app/constants/upcomingEventsInfo";
 import style from "../app/events/events.module.css";
 import EventCard from "@/components/eventCard";
-import { Link } from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Link } from "@nextui-org/react";
+import { MoreHorizontal } from "lucide-react";
 
 export default function UpcomingEventsSection() {
+  const noUpcomingEvents = UpcomingEvents.length == 0 ? true : false;
   return (
     <>
       <div className={`${style.eventsBG} bg py-20 lg:pt-36`}>
@@ -22,9 +24,20 @@ export default function UpcomingEventsSection() {
 
         <div className="flex justify-center">
           <div className="max-w-screen-lg px-6 flex flex-wrap justify-center gap-8">
-            {UpcomingEvents.map((e) => (
-              <EventCard event={e} key={e.title} />
-            ))}
+            {noUpcomingEvents && (
+              <Card className="p-12">
+                <CardHeader className="flex justify-center items-center">
+                  <MoreHorizontal />
+                </CardHeader>
+                <CardBody>No upcoming events. Stay tuned!</CardBody>
+              </Card>
+            )}
+            {!noUpcomingEvents &&
+              UpcomingEvents.map(
+                (e: { title: string; imgSrc: string; eventLink: string }) => (
+                  <EventCard event={e} key={e.title} />
+                )
+              )}
           </div>
         </div>
       </div>

@@ -2,6 +2,14 @@
   background-image: url(/illustrations/ourSponsorsBG.svg);
 }
 
-.sponsorsBG {
+.featuredPublicationsSectionBG {
+  background-image: url(/illustrations/ourSponsorsBG.svg);
+}
+
+.allPublicationsSectionBG {
   background-image: url(/illustrations/sponsorsBG.svg);
+}
+
+.homePublicationsSectionBG {
+  background-image: url(/illustrations/homePublicationsBG.svg);
 }
