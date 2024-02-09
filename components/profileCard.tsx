@@ -22,8 +22,8 @@ export default function profileCard(props: {
       </CardBody>
       <CardFooter className="py-2 px-4 justify-between items-center">
         <div className="w-48">
-          <h4 className="font-bold text-large">{name}</h4>
-          <p className="font-body">{role}</p>
+          <h4 className="text-lg">{name}</h4>
+          <p className="font-body text-sm">{role}</p>
           <small className="text-default-500">{degree}</small>
         </div>
         <Link isExternal href={linkedIn}>

@@ -18,6 +18,10 @@
   background-size: cover;
 }
 
+.notFoundBG {
+  background-image: url(/illustrations/notFoundBG.svg);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

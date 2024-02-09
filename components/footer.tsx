@@ -1,10 +1,10 @@
 import { Link } from "@nextui-org/react";
 import Image from "next/image";
 
-export default function footer() {
+export default function Footer() {
   return (
     <>
-      <div className="bg-orange-400 py-12">
+      <div className="bg-orange-400 py-12 mt-auto">
         <div className="mx-auto max-w-screen-lg px-6">
           <div className="flex justify-center items-center gap-3 pb-3">
             <Image
@@ -18,7 +18,9 @@ export default function footer() {
             </p>
           </div>
           <div className="flex justify-center items-center py-3 text-sm">
-            <p className="text-white text-center">unswpfc@gmail.com</p>
+            <p className="font-light text-white text-center">
+              unswpfc@gmail.com
+            </p>
           </div>
           <div className="flex justify-center items-center gap-6 lg:gap-24 py-3">
             <Link
@@ -59,7 +61,7 @@ export default function footer() {
             </Link>
           </div>
           <div className="flex justify-center items-center py-3 text-sm">
-            <p className="text-white text-center">
+            <p className="font-light text-white text-center">
               This PFC publication is proudly supported by Arc.
             </p>
           </div>

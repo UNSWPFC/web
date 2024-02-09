@@ -2,5 +2,9 @@
 import { NextUIProvider } from "@nextui-org/react";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
-  return <NextUIProvider>{children}</NextUIProvider>;
+  return (
+    <NextUIProvider className="flex flex-col min-h-screen">
+      {children}
+    </NextUIProvider>
+  );
 }

@@ -13,7 +13,7 @@ export default function UpcomingEventsSection() {
           <p className="font-brand font-bold text-zinc-800 leading-normal text-center text-2xl xs:text-3xl herotext:text-4xl pb-12">
             Upcoming Events
           </p>
-          <p className="font-body text-center">
+          <p className="font-light text-center">
             Follow our{" "}
             <Link href="https://www.facebook.com/unswpfc" isExternal>
               Facebook

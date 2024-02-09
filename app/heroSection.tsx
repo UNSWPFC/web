@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="hero:flex mx-auto max-w-screen-lg px-6 items-center justify-center hero:justify-start hero:h-96">
         <div className="hero:flex">
           <div>
-            <p className="font-body uppercase py-6 text-center hero:text-left text-xs herotext:text-sm">
+            <p className="font-light uppercase py-6 text-center hero:text-left text-xs herotext:text-sm">
               Welcome to PFC
             </p>
             <p className="font-brand font-bold text-2xl xs:text-3xl herotext:text-4xl text-zinc-800 leading-normal text-center hero:text-left">

@@ -13,3 +13,7 @@
 .homePublicationsSectionBG {
   background-image: url(/illustrations/homePublicationsBG.svg);
 }
+
+.publicationPageBG {
+  background-image: url(/illustrations/publicationBG.svg);
+}

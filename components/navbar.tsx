@@ -14,11 +14,11 @@ import Image from "next/image";
 
 export default function navbar() {
   const menuItems = [
-    { name: "About Us", nav: "about" },
-    { name: "Events", nav: "events" },
-    { name: "Publications", nav: "publications" },
-    { name: "Sponsors", nav: "sponsors" },
-    { name: "Join Us", nav: "join" },
+    { name: "About Us", nav: "/about" },
+    { name: "Events", nav: "/events" },
+    { name: "Publications", nav: "/publications" },
+    { name: "Sponsors", nav: "/sponsors" },
+    { name: "Join Us", nav: "https://forms.gle/mFkmdRqTojUUY1MU9" },
   ];
 
   return (
@@ -76,24 +76,24 @@ export default function navbar() {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <div className="hidden lg:flex gap-4">
+        <div className="hidden lg:flex gap-4 font-light">
           <NavbarItem>
-            <Link color="foreground" href="about">
+            <Link color="foreground" href="/about">
               About Us
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="events">
+            <Link color="foreground" href="/events">
               Events
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="publications">
+            <Link color="foreground" href="/publications">
               Publications
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="sponsors">
+            <Link color="foreground" href="/sponsors">
               Sponsors
             </Link>
           </NavbarItem>
@@ -115,9 +115,10 @@ export default function navbar() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item.name}-${index}`}>
             <Link
-              className={`w-full text-2xl leading-loose ${
+              className={`w-full text-2xl font-light leading-loose ${
                 index === menuItems.length - 1 ? "text-blue-600" : "text-black"
               }`}
+              isExternal={index === menuItems.length - 1}
               href={item.nav}
               size="lg"
             >

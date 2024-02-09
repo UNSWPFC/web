@@ -13,7 +13,7 @@ export default function AboutUsSection() {
             <p className="font-brand font-bold text-2xl xs:text-3xl herotext:text-4xl text-zinc-800 leading-normal">
               About Us
             </p>
-            <p className="font-body py-6 text-xs herotext:text-base">
+            <p className="font-light py-6 text-xs herotext:text-base">
               PFC is a student run non-constituent society, with the primary
               goal of upskilling our members in the area of financial
               management. We aim to educate young people of all backgrounds to
@@ -26,7 +26,7 @@ export default function AboutUsSection() {
           <div className="flex items-center justify-center hero:justify-end hero:pl-8">
             <Card radius="lg" className="border-none" shadow="lg">
               <Image
-                alt="Woman listing to music"
+                alt="grpPhoto"
                 className="object-cover"
                 height={550}
                 src="/headshots/grp.jpg"

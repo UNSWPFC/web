@@ -10,6 +10,8 @@ export default function PublicationCard(props: {
     title: string;
     date: string;
     description: string;
+    nav: string;
+    images: string[];
   };
 }) {
   const pub = props.publication;
@@ -34,21 +36,22 @@ export default function PublicationCard(props: {
             </div>
 
             <div className="flex flex-col col-span-6 md:col-span-8">
-              <div className="flex justify-between items-center">
-                <h3 className="font-bold text-2xl">{pub.title}</h3>
-                <p className="text-small text-foreground/80">{pub.date}</p>
+              <div className="flex md:flex-row flex-col justify-start md:justify-between">
+                <h3 className="font-bold font-brand text-2xl">{pub.title}</h3>
+                <p className="font-light text-small text-foreground/80">
+                  {pub.date}
+                </p>
               </div>
 
               <div className="flex flex-col mt-3 gap-1">
-                <p>{pub.description}</p>
+                <p className="font-light">{pub.description}</p>
               </div>
 
               <div className="flex w-full items-center pt-4">
                 <Button
                   as={Link}
-                  isExternal
                   className="bg-blue-600 text-white shadow-lg"
-                  href="#"
+                  href={`publications/${pub.nav}`}
                   variant="flat"
                 >
                   Read More

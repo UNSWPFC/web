@@ -38,7 +38,7 @@ export default function SponsorCard(props: {
         </CardHeader>
         <Divider />
         <CardBody>
-          <p>{sponsor.description}</p>
+          <p className="font-light">{sponsor.description}</p>
         </CardBody>
         <Divider />
         <CardFooter>

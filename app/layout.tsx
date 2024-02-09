@@ -7,13 +7,11 @@ import Footer from "../components/footer";
 const brandFont = Comfortaa({
   subsets: ["latin"],
   variable: "--font-brand",
-  weight: "400",
 });
 const headerFont = Quicksand({ subsets: ["latin"], variable: "--font-header" });
 const bodyFont = Lexend_Deca({
   subsets: ["latin"],
   variable: "--font-body",
-  weight: "300",
 });
 
 export const metadata = {

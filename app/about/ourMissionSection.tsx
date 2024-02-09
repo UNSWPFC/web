@@ -16,7 +16,7 @@ export default function OurMissionSection() {
               </p>
               <Goal />
             </div>
-            <p className="font-body py-6 text-xs herotext:text-base ">
+            <p className="font-light py-6 text-xs herotext:text-base ">
               Our mission is to empower students to take action towards a
               financially secure future. We hope to help facilitate students
               with their transition from university to adult life, with specific
