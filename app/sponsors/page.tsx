@@ -1,29 +1,31 @@
-import weMoneyImg from '../../assets/WeMoney.png'
-import sponsorsStyle from './sponsors.module.css';
+import style from "./sponsors.module.css";
+import SponsorCard from "@/components/sponsorCard";
+import { SponsorInfo } from "../constants/sponsorsInfo";
+import SponsorUsSection from "./sponsorUsSection";
 
-export default function sponsors() {
+export default function Sponsors() {
   return (
     <>
-      <div className={sponsorsStyle.header}>
-        <h1>Our Sponsors</h1>
+      <div
+        className={`${style.ourSponsorsBG} bg pt-20 lg:pt-36 pb-36 lg:pb-48`}
+      >
+        <p className="font-brand font-bold text-zinc-800 leading-normal text-center text-2xl xs:text-3xl herotext:text-4xl pb-12">
+          Our Sponsors
+        </p>
+        <p className="font-light text-center px-4">
+          Special thanks to those that make what we do possible
+        </p>
       </div>
-      <div className={sponsorsStyle.sponsorsContainer}>
-        <div className={sponsorsStyle.sponsorImg}>
-          <img src={weMoneyImg.src} alt="weMoney image" />
-        </div>
-        <div>
-          <a href="https://www.wemoney.com.au/" className={sponsorsStyle.sponsorLink}>WeMoney</a>
-        </div>
-        <div className={sponsorsStyle.sponsorDescription} >
-          WeMoney is a smart money management app that connects all your financial
-          accounts in one place and tracks your overall financial health. They
-          seek to empower Australians to take control of their personal finances.
-          WeMoney represents one of the nation’s fastest growing financial
-          communities. They help people pay down debt faster, track bills, bank
-          accounts and remove unnecessary subscriptions. Their vision is to
-          support a better financial health for Australians through their members.
+      <div
+        className={`${style.sponsorsBG} bg flex justify-center items-center py-12 lg:py-36`}
+      >
+        <div className="max-w-screen-lg flex flex-wrap justify-center lg:grid lg:grid-cols-2 gap-8 px-6">
+          {SponsorInfo.map((spon) => (
+            <SponsorCard sponsor={spon} key={spon.name} />
+          ))}
         </div>
       </div>
+      <SponsorUsSection />
     </>
   );
 }

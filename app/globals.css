@@ -4,12 +4,38 @@
 
 .global-body {
   margin: 0;
+  font-family: var(--font-body);
 }
 
-/* @tailwind base;
+.bgRatio {
+  aspect-ratio: 900/300;
+}
+
+.bg {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.notFoundBG {
+  background-image: url(/illustrations/notFoundBG.svg);
+}
+
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .wavesLargeSpacer {
+    min-height: 600px;
+  }
+
+  .profilesSection {
+    min-height: 750px;
+  }
+}
+/*
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
