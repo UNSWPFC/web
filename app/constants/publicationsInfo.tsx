@@ -15,6 +15,7 @@ const IntroductionToInvesting2023 = {
     "introduction-to-investing-2023-6.png",
     "introduction-to-investing-2023-7.png",
   ],
+  cover: "Introduction-to-investing-2023-cover.webp",
 };
 
 const IntroductionToSaving = {
@@ -24,6 +25,7 @@ const IntroductionToSaving = {
     "This week we are covering some budgeting tips and ways to reduce unnecessary spending.",
   nav: "introduction-to-saving",
   images: ["introduction-to-saving-1.png", "introduction-to-saving-2.png"],
+  cover: "introduction-to-saving-cover.webp",
 };
 
 const IntroductionToInvesting2021 = {
@@ -39,6 +41,7 @@ const IntroductionToInvesting2021 = {
     "introduction-to-investing-2021-2.png",
     "introduction-to-investing-2021-3.png",
   ],
+  cover: "introduction-to-investing-2021-cover.jpg",
 };
 
 const HolidayBudgeting = {
@@ -51,6 +54,7 @@ const HolidayBudgeting = {
     we have prepared some helpful tips to protect our wallets and meet our financial goals!",
   nav: "holiday-budgeting",
   images: ["holiday-budgeting-1.png", "holiday-budgeting-2.jpeg"],
+  cover: "holiday-budgeting-cover.png",
 };
 
 export const PublicationInfo = [

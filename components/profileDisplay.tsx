@@ -19,7 +19,7 @@ export default function ProfileDisplay(props: {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center max-w-screen-lg px-6">
         <Tabs
           color="primary"
           variant="bordered"
