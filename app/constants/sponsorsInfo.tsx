@@ -13,10 +13,10 @@ const WeMoney = {
 const Sharesies = {
   name: "Sharesies",
   description:
-    "Sharesies is a digital platform that makes investing easy and accessible.\
-    Their vision is to give someone with $5 and someone with $5 million the same\
-    investment opportunities. With over 600,000 investors using the Sharesies platform,\
-    they're continuing to break down the barriers to investing for more Australians.",
+    "Sharesies is a popular investment platform that allows users to easily\
+    buy and sell shares in companies, ETFs, and managed funds.\
+    It offers a user-friendly interface and educational resources,\
+    making investing accessible to people of all experience levels. communities.",
   link: "https://sharesies.com.au/",
   imgSrc: "Sharesies.webp",
 };

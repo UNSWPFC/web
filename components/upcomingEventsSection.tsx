@@ -9,7 +9,7 @@ export default function UpcomingEventsSection() {
   return (
     <>
       <div className={`${style.eventsBG} bg py-20 lg:pt-36`}>
-        <div className="pb-16 xs:pb-24">
+        <div className="pb-16 xs:pb-24 px-4">
           <p className="font-brand font-bold text-zinc-800 leading-normal text-center text-2xl xs:text-3xl herotext:text-4xl pb-12">
             Upcoming Events
           </p>

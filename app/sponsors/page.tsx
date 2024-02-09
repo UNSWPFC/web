@@ -12,14 +12,14 @@ export default function Sponsors() {
         <p className="font-brand font-bold text-zinc-800 leading-normal text-center text-2xl xs:text-3xl herotext:text-4xl pb-12">
           Our Sponsors
         </p>
-        <p className="font-light text-center">
+        <p className="font-light text-center px-4">
           Special thanks to those that make what we do possible
         </p>
       </div>
       <div
-        className={`${style.sponsorsBG} bg flex justify-center items-center py-12 lg:py-36 px-12`}
+        className={`${style.sponsorsBG} bg flex justify-center items-center py-12 lg:py-36`}
       >
-        <div className="max-w-screen-lg px-6 flex flex-wrap justify-center lg:grid lg:grid-cols-2 gap-8">
+        <div className="max-w-screen-lg flex flex-wrap justify-center lg:grid lg:grid-cols-2 gap-8 px-6">
           {SponsorInfo.map((spon) => (
             <SponsorCard sponsor={spon} key={spon.name} />
           ))}

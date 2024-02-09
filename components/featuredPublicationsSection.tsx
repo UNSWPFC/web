@@ -16,10 +16,10 @@ export default function FeaturedPublicationsSection(props: {
         } bg py-20 lg:pt-36`}
       >
         <div className="pb-16 xs:pb-24">
-          <p className="font-brand font-bold text-zinc-800 leading-normal text-center text-2xl xs:text-3xl herotext:text-4xl pb-12">
+          <p className="font-brand font-bold text-zinc-800 leading-normal text-center text-2xl xs:text-3xl herotext:text-4xl pb-12 px-4">
             Featured Publication
           </p>
-          <p className="font-light text-center">
+          <p className="font-light text-center px-4">
             Learn about how you can improve your personal finance
           </p>
         </div>
