@@ -1,11 +1,11 @@
 import FeaturedPublicationsSection from "@/components/featuredPublicationsSection";
-import AllPublicationsSection from "./allPublicationsSection";
+import OtherPublicationsSection from "./otherPublicationsSection";
 
 export default function Publications() {
   return (
     <>
       <FeaturedPublicationsSection isHomePage={false} />
-      <AllPublicationsSection />
+      <OtherPublicationsSection />
     </>
   );
 }
